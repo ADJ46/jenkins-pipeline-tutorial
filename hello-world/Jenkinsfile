@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Run the static analysis to the code' 
             }
-            steps{
+            steps {
                 echo 'My Name is Ashly'
             }
         }
