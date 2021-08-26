@@ -5,10 +5,13 @@ pipeline {
             steps {
                 echo 'Run the static analysis to the code' 
             }
+            steps{
+                echo 'My Name is Ashly'
+            }
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compilation of source code has been done' 
             }
         }
         stage('Security Check') {
@@ -29,6 +32,9 @@ pipeline {
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
+            }
+            steps {
+                echo 'Save it' 
             }
         }
     }
